@@ -1,16 +1,20 @@
 {
   "todos": [
-      {
-          "id": 0,
-          "name": "Throw a pizza in the oven"
-      },
-      {
-          "id": 1,
-          "name": "Have a chat with my fish"
-      },
-      {
-          "id": 2,
-          "name": "Water the geraniums"
-      }
+    {
+      "id": 0,
+      "name": "Throw a pizza in the oven"
+    },
+    {
+      "id": 1,
+      "name": "Have a chat with my fish"
+    },
+    {
+      "id": 2,
+      "name": "Water the geraniums"
+    },
+    {
+      "name": "Eat a cinnamon swirl",
+      "id": 3
+    }
   ]
 }
