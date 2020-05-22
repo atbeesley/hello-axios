@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Todos los todos</h1>
+      <ul>
+        <li v-for="todo of todos" :key="todo.id">{{todo.name}}</li>
+      </ul>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import axios from 'axios';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "app",
+  data() {
+    return {
+      todos: []
+    };
   }
-}
+};
 </script>
 
 <style>
