@@ -16,6 +16,14 @@ export default {
     return {
       todos: []
     };
+  },
+  async created(){
+    try {
+      const res = await axios.get('http://localhost:3000/todos');
+      this.todos = res.data;
+    } catch(e){
+      console.log(e);
+    }
   }
 };
 </script>
@@ -28,5 +36,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+ul{
+  margin: 0px; 
+  padding: 0px;
+}
+
+li {
+  list-style: none;
 }
 </style>
